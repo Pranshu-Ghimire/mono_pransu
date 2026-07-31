@@ -1,8 +1,8 @@
 import Background from "@/assets/svg/onboardingbag.svg";
-
+import { Button } from "@/components/button";
 import { Image } from "expo-image";
-import { StyleSheet, View , Text, Pressable } from "react-native";
-
+import { StyleSheet, View , Text, } from "react-native";
+import { Link } from "expo-router";
 
 const styles = StyleSheet.create({
     container: {
@@ -79,18 +79,14 @@ export default function Index() {
         </View>
 
         <View style={styles.actionContainer}>
-            <Pressable style={styles.button} onPress={() => alert("Loading...")}>
-                <Text style={styles.buttonText}>Get Started</Text>
-            </Pressable>
+            <Button title="Get Started" type="primary" />
 
-                <Text style={styles.accountText}>
-                    Already have an account? {" "}
-
-                    <Text style={styles.loginText} onPress={() => alert("Navigating")}>
-                        Log In
-                    </Text>
-
-                </Text>
+                    <Text style={styles.accountText}> 
+                      Already Have Account?{" "}
+                      <Link href="/(tabs)/login" asChild>
+                      <Text style={styles.loginText}>Log In</Text>
+                      </Link>
+                      </Text>
 
         </View>
     </View>
