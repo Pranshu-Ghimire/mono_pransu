@@ -1,4 +1,4 @@
-import Background from "../assets/svg/onboardingbag.svg";
+import Background from "@/assets/svg/onboardingbag.svg";
 import { Image } from "expo-image";
 import { StyleSheet, View , Text, Pressable } from "react-native";
 

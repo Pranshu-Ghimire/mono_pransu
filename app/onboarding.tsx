@@ -1,4 +1,4 @@
-import Background from "../assets/svg/onboardingbag.svg";
+import Background from "@/assets/svg/onboardingbag.svg";
 
 import { Image } from "expo-image";
 import { StyleSheet, View , Text, Pressable } from "react-native";
@@ -73,7 +73,7 @@ export default function Index() {
         <View style={styles.imageContainer}>
             <Background style={{ width: "100%", height: 600 }} />
             <Image
-                source={require("../assets/svg/onboard.png")}
+                source={require("@/assets/svg/onboard.png")}
                 style={styles.logo}
             />
         </View>
