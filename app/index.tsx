@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#FFFFFF",
   },
 
   header: {
