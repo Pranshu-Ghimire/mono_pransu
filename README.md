@@ -1,54 +1,88 @@
-<<<<<<< HEAD
-# Mono_pransu
-=======
-# Welcome to your Expo app 👋
+# 📱 Mono Pransu
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, high-performance universal mobile application built with **React Native**, **Expo SDK 54**, **Expo Router**, and **Firebase Authentication**.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- **🔐 Firebase Authentication**: Support for User Sign Up, Login, and Session handling.
+- **🎨 Sleek UI Components**: Custom reusable components including custom buttons, input fields with icon support, back navigation, and linear gradients.
+- **🚀 Onboarding & Auth Flow**: Dynamic onboarding carousel and authentication screens (`Login`, `Signup`, `Onboarding`).
+- **📱 Universal Support**: Seamless support for iOS, Android, and Web powered by Expo Router (file-based navigation).
+- **⚡ Modern Stack**: Built with React 19, React Native 0.81, Reanimated v4, and TypeScript.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🏗️ Project Architecture
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+├── app/                  # Expo Router file-based pages & layouts
+│   ├── _layout.tsx       # Root layout configuration
+│   └── (tabs)/           # Main tab bar screen group
+│       ├── _layout.tsx   # Tab bar navigation configuration
+│       ├── index.tsx     # Main home view
+│       ├── onboarding.tsx# Interactive onboarding flow
+│       ├── login.tsx     # Login screen
+│       └── signup.tsx    # Sign up screen
+├── components/           # Reusable UI components
+│   ├── button.tsx        # Custom action button
+│   ├── input-field.tsx   # Text input field component
+│   └── back-button.tsx   # Navigation back header action
+├── services/             # Application services
+│   └── firebase.ts       # Firebase app initialization & auth configuration
+├── assets/               # Fonts, images, and static assets
+└── AGENTS.md             # Developer & AI Agent instructions
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🛠️ Tech Stack & Dependencies
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Framework**: [Expo SDK 54](https://docs.expo.dev/versions/v54.0.0/)
+- **Navigation**: [Expo Router v6](https://docs.expo.dev/router/introduction)
+- **Backend / Auth**: [Firebase v12](https://firebase.google.com/docs)
+- **UI / Styling**: `expo-linear-gradient`, `@expo/vector-icons`, `react-native-reanimated`
+- **Notifications**: `react-native-toast-message`
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 🚀 Getting Started
 
-Join our community of developers creating universal apps.
+### Prerequisites
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
->>>>>>> 95948dd (Initial commit)
+Ensure you have [Node.js](https://nodejs.org/) installed along with `npm` or `yarn`.
+
+### 1. Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Pranshu-Ghimire/mono_pransu.git
+cd mono_pransu
+npm install
+```
+
+### 2. Run Locally
+
+Start the Expo development server:
+
+```bash
+# Start default dev server
+npm start
+
+# Run on Android
+npm run android
+
+# Run on iOS
+npm run ios
+
+# Run on Web
+npm run web
+```
+
+---
+
+## 📝 Rules & Guidelines
+
+Please refer to [`AGENTS.md`](./AGENTS.md) and [`CLAUDE.md`](./CLAUDE.md) for core guidelines when contributing or using AI coding assistants.
